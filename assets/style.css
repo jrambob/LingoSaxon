@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+  background-color: rgb(54, 189, 189);
+
+}
+
+#container1{
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  border: 3pc;
+  border-color: black;
+}

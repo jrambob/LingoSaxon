@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <title>LingoSaxon</title>
+  <!-- Essential Studio for JavaScript  theme reference -->
+  <link rel="stylesheet" href="http://cdn.syncfusion.com/16.4.0.52/js/web/flat-azure/ej.web.all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--  jquery script  -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+  <!--  jsrender script  -->
+  <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+  <!-- Essential JS UI widget -->
+  <script src="http://cdn.syncfusion.com/16.4.0.52/js/web/ej.web.all.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/LingoSaxon/LingoSaxon/assets/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">LingoSaxon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/index.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/spaceOfWords.html">Word Mapper </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/wordProfile.html">Word Profiles
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/tagbank.html">Tag Bank
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<style type="text/css" media="screen">
+  body {
+    background-color: rgb(54, 189, 189);
+
+  }
+
+  .col-8 {
+    background-color: white;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="myList" role="tablist">
+          <a class="list-group-item list-group-item-primary list-group-item-action active" data-toggle="list" href="#nsubj" role="tab">nsubj</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#nsubjpass" role="tab">nsubjpass</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#obj" role="tab">obj</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#iobj" role="tab">iobj</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#csubj" role="tab">csubj</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#csubjpass" role="tab">csubjpass</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#ccomp" role="tab">ccomp</a>
+          <a class="list-group-item list-group-item-primary list-group-item-action" data-toggle="list" href="#xcomp" role="tab">xcomp</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#nmod" role="tab">nmod</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#nmod:npmod" role="tab">nmod:npmod</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#nmod:tmod" role="tab">nmod:tmod</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#nmod:poss" role="tab">nmod:poss</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#advcl" role="tab">advcl</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#advmod" role="tab">advmod</a>
+          <a class="list-group-item list-group-item-secondary list-group-item-action" data-toggle="list" href="#neg" role="tab">neg</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#nummod" role="tab">nummod</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#appos" role="tab">appos</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#amod" role="tab">amod</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#acl" role="tab">acl</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#acl:relcl" role="tab">acl:relcl</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#det" role="tab">det</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#det:predet" role="tab">det:predet</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#case" role="tab">case</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#compound" role="tab">compound</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#compound:prt" role="tab">compound:prt</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#flat" role="tab">flat</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#fixed" role="tab">fixed</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#foreign" role="tab">foreign</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#conj" role="tab">conj</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#cc" role="tab">cc</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#cc:preconj" role="tab">cc:preconj</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#punct" role="tab">punct</a>
+          <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="list" href="#list" role="tab">list</a>
+          <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="list" href="#parataxis" role="tab">parataxis</a>
+          <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="list" href="#orphan" role="tab">orphan</a>
+          <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="list" href="#dislocated" role="tab">dislocated</a>
+          <a class="list-group-item list-group-item-action list-group-item-success" data-toggle="list" href="#reparandum" role="tab">reparandum</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#vocative" role="tab">vocative</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#discourse" role="tab">discourse</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#expl" role="tab">expl</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#aux" role="tab">aux</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#auxpass" role="tab">auxpass</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#cop" role="tab">cop</a>
+          <a class="list-group-item list-group-item-action list-group-item-warning" data-toggle="list" href="#mark" role="tab">mark</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="displayList">
+          <div class="tab-content">
+            <div class="tab-pane active" id="list-acl" role="tabpanel">home button works</div>
+            <div class="tab-pane" id="list-advcl" role="tabpanel">second button works</div>
+            <div class="tab-pane" id="messages" role="tabpanel">...</div>
+            <div class="tab-pane" id="settings" role="tabpanel">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
