@@ -16,14 +16,13 @@ wordMapBttn.addEventListener("click", function (bttn) {
   please();
 
 
-  var counts = {};
+  var counts = [];
 
   wordCoordinates.forEach(function (i) {
     counts[i] = (counts[i] || 0) + 1;
     count.push(counts)
+    document.getElementById("wordMap").innerHTML += "<p>" + counts[i] + " </p><br>";
   });
   console.log(counts)
-
-  document.getElementById("Spreadsheet").innerHTML += "<p>" + counts + " </p><br>"
 
 });

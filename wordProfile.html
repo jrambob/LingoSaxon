@@ -2,6 +2,17 @@
 
 <head>
   <title>LingoSaxon</title>
+  <!-- Essential Studio for JavaScript  theme reference -->
+  <link rel="stylesheet" href="http://cdn.syncfusion.com/16.4.0.52/js/web/flat-azure/ej.web.all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--  jquery script  -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+  <!--  jsrender script  -->
+  <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+  <!-- Essential JS UI widget -->
+  <script src="http://cdn.syncfusion.com/16.4.0.52/js/web/ej.web.all.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/LingoSaxon/LingoSaxon/assets/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -16,32 +27,102 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 </head>
-
+<a href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/about.html">
+  <img src="lslogo.jpg" width="90" height="90" class="d-inline-block" alt="">
+</a>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">LingoSaxon</a>
+
+
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/index.html">Home </a>
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/index.html"> Parsing Tool </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/spaceOfWords.html">Word Mapper </a>
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/spaceOfWords.html"> Word Mapper
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/wordProfile.html">Word Profiles </a>
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/wordProfile.html"> Word Profiles
+        </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Coding%20Bootcamp/LingoSaxon/LingoSaxon/tagbank.html"> Tag Banks </a>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
+
+<style type="text/css" media="screen">
+  body {
+    background-color: rgb(54, 189, 189);
+
+  }
+
+  .d-inline-block {
+    margin: none;
+    float: left;
+    background-color: black;
+    border: none
+  }
+
+  .navbar {
+    height: 90px;
+    background-color: black;
+  }
+
+  .navbar-nav {
+    border: none;
+    margin: none;
+    width: 900px;
+  }
+
+  .nav-link {
+    font-size: 17pt;
+    width: auto;
+
+  }
+
+  .nav-item {
+    width: auto;
+    position: relative;
+    margin-right: 10%;
+  }
+
+  #input-group {
+    position: absolute;
+    left: 8%;
+    top: 8%;
+    width: 500px;
+
+  }
+
+  #wordButtons {
+    position: absolute;
+    left: 24%;
+    top: 30%;
+    border: 3pc;
+    border-color: black;
+  }
+
+  #Spreadsheet {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    border: 3pc;
+    border-color: black;
+    background-color: beige;
+  }
+
+  .form-control {
+    width: auto;
+  }
+</style>
 
 
 
